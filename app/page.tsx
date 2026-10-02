@@ -144,7 +144,7 @@ export default function Home() {
       </section>
 
       <TestimonialSection />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <CommunitySection />
       <ContactSection />
     </main>
