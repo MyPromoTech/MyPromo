@@ -28,42 +28,78 @@ const Services: { title: string; href: string; description: string }[] = [
     description: "Transform Your Brand with Stunning Graphic Design.",
   },
   {
-    title: "Lead Generation",
-    href: "/services/leadgen",
-    description: " Supercharge Your Sales with Expert Lead Generation.",
-  },
+  title: "Performance Marketing",
+  href: "/services/performancemarketing",
+  description: "Drive Measurable Growth with Performance Marketing.",
+},
   {
     title: "Marketing Automation",
     href: "/services/marketingautomation",
     description:
       "Streamline Your Marketing with Advanced Automation Solutions.",
   },
-  {
+ /* {
     title: "AI Enhanced Optimization",
     href: "/services/aioptimization",
     description:
       "Unlock Superior Performance with AI-Enhanced Digital Optimization.",
-  },
-  {
+  }, */
+ /* {
     title: "Content Writing",
     href: "/services/contentwriting",
     description: "Elevate Your Brand with Professional Content Writing.",
-  },
+  }, */
   {
     title: "Content Marketing ",
     href: "/services/contentmarketing",
     description: "Drive Engagement and Growth with Expert Content Marketing.",
   },
-  {
+ /* {
     title: "Collab Membership",
     href: "/services/collab",
     description: "Unlock Exclusive Benefits with Our Collab Membership",
-  },
+  }, */
   {
     title: "Salesforce CRM",
     href: "/services/salesforce",
     description:
       "We are dedicated to helping businesses like yours unlock the full potential of Salesforce.",
+  },
+  {
+    title: "Email & WhatsApp Marketing",
+    href: "/services/emailwhatsappmarketing",
+    description:
+      "We are dedicated to helping businesses like yours unlock the full potential of Email & WhatsApp Marketing.",
+  },
+  {
+    title: "Ecommerce Website Development",
+    href: "/services/ecommerce",
+    description:
+      " We create responsive online stores with seamless navigation, secure payment integration, product management, and a smooth shopping experience.",
+  },
+  {
+    title: "Local SEO & Google Maps Optimization",
+    href: "/services/local-seo",
+    description:
+      " Boost your local visibility, rank in the Google 3-Pack, and attract high-intent nearby customers with complete Google Business Profile optimization and geo-targeted local SEO",
+  },
+  {
+    title: "Digital Marketing Consultation",
+    href: "/services/digital-marketing-consultation",
+    description:
+      "Get expert digital marketing consultation to audit your online presence, build custom growth strategies, and maximize your ROI across search, social, and paid ads.",
+  },
+   {
+    title: "Influencer Marketing",
+    href: "/services/influencer-marketing",
+    description:
+      "Build trust, reach new audiences, and drive brand growth through strategic influencer partnerships.",
+  },
+  {
+    title: "Video Editing",
+    href: "/services/videoediting",
+    description:
+      "Turn your ideas into engaging video content designed for today's digital platforms.",
   },
 ];
 

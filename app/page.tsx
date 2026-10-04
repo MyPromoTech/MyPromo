@@ -16,13 +16,12 @@ import More2 from "@/app/assets/more2.svg";
 interface ServiceProps {
   name: string;
 }
-
 const services: ServiceProps[] = [
   {
-    name: "Web Devlopment",
+    name: "Web Development",
   },
   {
-    name: "Search Engine Optimization",
+    name: "SEO & AEO",
   },
   {
     name: "Social Media Marketing",
@@ -31,7 +30,7 @@ const services: ServiceProps[] = [
     name: "Graphic Design",
   },
   {
-    name: "Lead Generation",
+    name: "Performance Marketing",
   },
   {
     name: "Marketing Automation",
@@ -40,18 +39,31 @@ const services: ServiceProps[] = [
     name: "AI Enhanced Optimization",
   },
   {
-    name: "Content Writing",
-  },
-  {
     name: "Content Marketing",
   },
   {
-    name: "Collab Membership",
+    name: "Influencer Marketing",
+  },
+  {
+    name: "Video Editing",
+  },
+  {
+    name: "Digital Marketing Consultation",
+  },
+  {
+    name: "Local SEO & Google Maps Optimization",
+  },
+  {
+    name: "Email & WhatsApp Marketing",
+  },
+  {
+    name: "E-commerce Services",
   },
   {
     name: "Salesforce",
   },
 ];
+
 
 export const metadata = {
   title: "MyPromo",

@@ -1,16 +1,18 @@
+
 import { CTASection } from "@/components/layout/sections/cta";
 import { CTAWithCard } from "@/components/layout/sections/cta-with-card";
 import PageHeader from "@/components/layout/sections/page-header";
 import { TextShimmer } from "@/components/ui/text-shimmer";
-
 import { Timeline } from "@/components/ui/timeline-effect";
+
 import {
   IconClipboardCopy,
   IconFileBroken,
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
-import ContentImage from '@/app/assets/services/123733.jpg'
+
+import ContentImage from "@/app/assets/online-strategy-media-marketing-icons.jpg";
 
 export default function ContentMarketing() {
   return (
@@ -21,8 +23,10 @@ export default function ContentMarketing() {
         subtitle={PageData.subtitle}
         image={ContentImage}
       />
+
+      {/* Content Marketing Services */}
       <div className="py-24">
-        <div className="px-10 lg:px-20 ">
+        <div className="px-10 lg:px-20">
           <div className="bg-primary/20 px-4 py-2 w-fit rounded-full mb-5">
             <TextShimmer className="bg-primary/5 w-fit rounded-full [--base-color:theme(colors.white)] [--base-gradient-color:theme(colors.white)] dark:[--base-color:theme(colors.white)] dark:[--base-gradient-color:theme(colors.orange.800)]">
               What We Offer
@@ -33,9 +37,17 @@ export default function ContentMarketing() {
             Our Content Marketing Services Include
           </h1>
         </div>
+
         <Timeline data={data} />
       </div>
-      <CTAWithCard items={items} title="Why Choose MyPromo?" />
+
+      {/* Why Choose MyPromo */}
+      <CTAWithCard
+        items={items}
+        title="Why Choose MyPromo?"
+      />
+
+      {/* Final CTA */}
       <CTASection
         title={CTADATA.title}
         description={CTADATA.description}
@@ -45,180 +57,341 @@ export default function ContentMarketing() {
   );
 }
 
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
 const PageData = {
   title: "Content Marketing",
-  subtitle: "Drive Engagement and Growth with Expert Content Marketing",
+  subtitle:
+    "Build Authority. Attract the Right Audience. Drive Business Growth.",
   description:
-    "At MyPromo, we specialize in content marketing strategies designed to captivate your audience, build brand authority, and drive measurable results. Our comprehensive approach ensures that your content not only reaches your target audience but also compels them to take action.",
+    "At MyPromo, we treat content as a growth asset—not just something to post. We combine audience research, search intent, brand positioning, storytelling, SEO, and performance data to create content that attracts the right people at every stage of the customer journey.",
 };
+
+/* =========================================================
+   CONTENT MARKETING SERVICES
+========================================================= */
+
 const data = [
   {
-    title: "Content Strategy Development",
+    title: "Content Strategy & Planning",
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-          Create a robust content marketing strategy tailored to your business
-          goals, target audience, and industry trends. Define objectives, key
-          messages, and content formats that will drive success.
+          We develop a complete content strategy based on your business
+          objectives, target audience, industry, competitors, customer journey,
+          and marketing funnel. We define what to communicate, who to
+          communicate with, where to publish, and how each content asset
+          contributes to your business goals.
         </p>
       </div>
     ),
   },
+
   {
-    title: "Content Creation",
+    title: "Audience & Customer Research",
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-          Develop high-quality content that resonates with your audience and
-          aligns with your brand’s voice. This includes blog posts, articles,
-          infographics, videos, and more.
+          We identify your ideal customer profiles, pain points, interests,
+          questions, objections, buying triggers, and content preferences. This
+          allows us to create content that addresses real customer needs
+          instead of producing content simply for the sake of publishing.
         </p>
       </div>
     ),
   },
+
   {
-    title: "SEO Optimization",
+    title: "Content Audit & Gap Analysis",
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-          Optimize content for search engines to improve visibility and drive
-          organic traffic. Implement strategic keyword integration, meta
-          descriptions, and SEO best practices to enhance search rankings.
+          We evaluate your existing website, blogs, landing pages, social media,
+          and other content assets to identify what is performing, what is
+          outdated, what is missing, and where new content opportunities exist.
         </p>
       </div>
     ),
   },
+
   {
-    title: "Content Distribution",
+    title: "Competitor Content Analysis",
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-          Ensure your content reaches the right audience through strategic
-          distribution channels. Utilize social media, email marketing, and
-          partnerships to maximize reach and engagement.
+          We study your competitors content strategies, including their
+          topics, keywords, content formats, publishing patterns, messaging,
+          engagement, and search visibility. We use these insights to identify
+          content gaps and opportunities for differentiation.
         </p>
       </div>
     ),
   },
+
   {
-    title: "Social Media Management",
+    title: "Content Pillar & Topic Clusters",
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-          Manage and execute content on social media platforms to boost
-          engagement, grow your audience, and drive traffic to your website.
-          Create and schedule posts, interact with followers, and analyze
-          performance.
+          We build content pillars around your core products, services,
+          expertise, and audience interests. Supporting topics are strategically
+          connected to create topical depth, strengthen SEO authority, and guide
+          users from informational content toward your commercial pages.
         </p>
       </div>
     ),
   },
+
   {
-    title: "Email Marketing Campaigns",
+    title: "SEO Content Marketing",
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-          Design and implement email marketing campaigns that deliver valuable
-          content directly to your audience’s inbox. Develop newsletters,
-          promotional emails, and automated sequences to nurture leads and
-          retain customers.
+          We combine keyword research, search intent analysis, semantic
+          relevance, topical authority, internal linking, and on-page
+          optimization to create content designed to attract qualified organic
+          traffic and support your overall SEO strategy.
         </p>
       </div>
     ),
   },
+
   {
-    title: "Content Curation",
+    title: "Blog & Long-Form Content",
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-          Curate relevant and valuable content from industry sources to
-          complement your original content. Share curated content to provide
-          additional value to your audience and establish thought leadership.
+          We create research-driven blogs, guides, industry articles, how-to
+          content, listicles, comparison articles, case studies, and
+          thought-leadership pieces designed to educate audiences while
+          supporting brand visibility and business objectives.
         </p>
       </div>
     ),
   },
+
   {
-    title: "Analytics and Reporting",
+    title: "Website & Landing Page Content",
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-          Monitor and measure the performance of your content marketing efforts
-          using advanced analytics tools. Track key metrics such as engagement,
-          traffic, and conversion rates to refine your strategy and improve
-          results.
+          We create conversion-focused website content for service pages,
+          product pages, landing pages, category pages, About pages, and other
+          important touchpoints. The content is structured to communicate value,
+          address objections, build trust, and encourage action.
         </p>
       </div>
     ),
   },
+
+  {
+    title: "Social Media Content Strategy",
+    content: (
+      <div>
+        <p className="text-xl lg:text-2xl text-muted-foreground">
+          We develop platform-specific content strategies for Facebook,
+          Instagram, LinkedIn, and other relevant channels. Content is planned
+          around brand awareness, engagement, education, community building,
+          lead generation, and conversion objectives.
+        </p>
+      </div>
+    ),
+  },
+
+  {
+    title: "Social Media Copywriting",
+    content: (
+      <div>
+        <p className="text-xl lg:text-2xl text-muted-foreground">
+          We create strategic captions, hooks, CTAs, carousel copy, campaign
+          messaging, educational posts, promotional content, storytelling
+          posts, and thought-leadership content aligned with your brand voice.
+        </p>
+      </div>
+    ),
+  },
+
+  {
+    title: "Video & Reels Content",
+    content: (
+      <div>
+        <p className="text-xl lg:text-2xl text-muted-foreground">
+          We develop concepts, hooks, scripts, storytelling structures, and
+          content ideas for short-form videos, Reels, educational videos,
+          promotional videos, testimonials, product demonstrations, and brand
+          storytelling.
+        </p>
+      </div>
+    ),
+  },
+
+  {
+    title: "Thought Leadership Content",
+    content: (
+      <div>
+        <p className="text-xl lg:text-2xl text-muted-foreground">
+          Position your brand and key people as credible voices within your
+          industry through expert articles, opinion-led content, LinkedIn
+          content, industry insights, educational posts, and knowledge-driven
+          campaigns.
+        </p>
+      </div>
+    ),
+  },
+
+  {
+    title: "Case Studies & Customer Stories",
+    content: (
+      <div>
+        <p className="text-xl lg:text-2xl text-muted-foreground">
+          Turn successful customer experiences into powerful marketing assets.
+          We structure case studies around the problem, solution,
+          implementation, measurable outcomes, and customer experience to build
+          credibility and support the sales process.
+        </p>
+      </div>
+    ),
+  },
+
+  {
+    title: "Lead Generation Content",
+    content: (
+      <div>
+        <p className="text-xl lg:text-2xl text-muted-foreground">
+          Create content specifically designed to move prospects toward enquiry
+          or purchase. This includes lead magnets, downloadable guides,
+          checklists, ebooks, landing page content, comparison content,
+          educational resources, and conversion-focused campaigns.
+        </p>
+      </div>
+    ),
+  },
+
+  {
+    title: "Email & Nurture Content",
+    content: (
+      <div>
+        <p className="text-xl lg:text-2xl text-muted-foreground">
+          Develop newsletters, promotional emails, educational sequences, lead
+          nurturing content, product updates, and customer retention campaigns
+          that keep your audience engaged throughout the buying journey.
+        </p>
+      </div>
+    ),
+  },
+
   {
     title: "Content Repurposing",
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-          Maximize the value of your content by repurposing it into various
-          formats. Transform blog posts into infographics, videos, or social
-          media posts to reach different segments of your audience.
+          Maximize the value of every major content asset by transforming blogs
+          into social posts, videos into Reels, webinars into articles,
+          research into carousels, and long-form content into multiple
+          distribution assets.
         </p>
       </div>
     ),
   },
+
   {
-    title: "Brand Storytelling",
+    title: "Content Distribution Strategy",
     content: (
       <div>
         <p className="text-xl lg:text-2xl text-muted-foreground">
-          Craft compelling brand stories that connect with your audience on an
-          emotional level. Use storytelling techniques to convey your brand’s
-          mission, values, and unique selling points.
+          Creating great content is only part of the process. We develop
+          distribution strategies across search engines, social media, email,
+          communities, paid promotion, and other relevant channels to increase
+          content reach and visibility.
+        </p>
+      </div>
+    ),
+  },
+
+  {
+    title: "AI-Assisted Content Strategy",
+    content: (
+      <div>
+        <p className="text-xl lg:text-2xl text-muted-foreground">
+          We use AI tools strategically for research, ideation, content
+          structuring, analysis, and workflow efficiency while maintaining
+          human oversight for brand voice, originality, accuracy, positioning,
+          and quality.
+        </p>
+      </div>
+    ),
+  },
+
+  {
+    title: "Content Performance & Optimization",
+    content: (
+      <div>
+        <p className="text-xl lg:text-2xl text-muted-foreground">
+          We track content performance using relevant metrics such as organic
+          traffic, rankings, engagement, reach, click-through rates, leads,
+          conversions, and assisted conversions. Insights are used to improve
+          existing content and guide future production.
         </p>
       </div>
     ),
   },
 ];
 
-const CTADATA = {
-  title: "Ready to elevate",
-  dualTitle: " your content marketing strategy?",
-  description:
-    "Contact us today to learn how our content marketing services can help you engage your audience, build brand authority, and achieve your business goals.",
-};
+/* =========================================================
+   WHY CHOOSE MYPROMO
+========================================================= */
 
 const items = [
   {
-    title: "Strategic Approach",
+    title: "Strategy Before Production",
     description:
-      "We develop and execute content marketing strategies that align with your business objectives and target audience.",
+      "We don't believe in creating content just to fill a content calendar. Every content asset is connected to a specific audience, objective, funnel stage, or business goal.",
 
     icon: (
-      <IconClipboardCopy className="h-10 w-10  bg-primary/20 rounded-full p-2 ring-8 ring-primary/10 mb-3" />
+      <IconClipboardCopy className="h-10 w-10 bg-primary/20 rounded-full p-2 ring-8 ring-primary/10 mb-3" />
     ),
   },
+
   {
-    title: "High-Quality Content",
+    title: "SEO + Creative + Marketing",
     description:
-      "Our team creates engaging and valuable content that enhances your brand’s credibility and drives action.",
+      "Our content approach combines search optimization, creative storytelling, conversion strategy, and digital marketing rather than treating content as an isolated service.",
 
     icon: (
-      <IconFileBroken className="h-10 w-10  bg-primary/20 rounded-full p-2 ring-8 ring-primary/10 mb-3" />
+      <IconFileBroken className="h-10 w-10 bg-primary/20 rounded-full p-2 ring-8 ring-primary/10 mb-3" />
     ),
   },
+
   {
-    title: "SEO Expertise",
+    title: "Full-Funnel Content",
     description:
-      "We optimize content to improve search engine rankings and attract organic traffic.",
+      "We create content for different stages of the customer journey—from awareness and education to consideration, conversion, retention, and advocacy.",
 
     icon: (
-      <IconSignature className="h-10 w-10  bg-primary/20 rounded-full p-2 ring-8 ring-primary/10 mb-3" />
+      <IconSignature className="h-10 w-10 bg-primary/20 rounded-full p-2 ring-8 ring-primary/10 mb-3" />
     ),
   },
+
   {
-    title: "Comprehensive Services",
+    title: "Data-Driven Optimization",
     description:
-      "From strategy development to content creation and distribution, we offer a full suite of content marketing services.",
+      "We continuously analyze content performance and use real data to identify what should be improved, expanded, repurposed, or replaced.",
 
     icon: (
-      <IconTableColumn className="h-10 w-10  bg-primary/20 rounded-full p-2 ring-8 ring-primary/10 mb-3" />
+      <IconTableColumn className="h-10 w-10 bg-primary/20 rounded-full p-2 ring-8 ring-primary/10 mb-3" />
     ),
   },
 ];
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+const CTADATA = {
+  title: "Ready to turn content",
+  dualTitle: " into a growth engine?",
+  description:
+    "Build a content ecosystem that does more than generate likes and page views. Let MyPromo create strategic content that builds authority, attracts qualified audiences, generates demand, and supports measurable business growth.",
+};

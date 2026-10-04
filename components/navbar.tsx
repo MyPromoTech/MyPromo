@@ -33,63 +33,83 @@ import { useToast } from "@/hooks/use-toast";
 
 const Services: { title: string; href: string; description: string }[] = [
   {
-    title: " Website Development ",
+    title: "Website Development",
     href: "/services/webdev",
-    description:
-      "Transform Your Online Presence with Website Development Expert.",
+    description: "Transform Your Online Presence with Expert Website Development.",
   },
   {
-    title: "Search Engine Optimization",
+    title: "SEO&AEO",
     href: "/services/seo",
-    description: "Boost Your Online Visibility with SEO Expert.",
+    description: "Improve Search Visibility with SEO and Answer Engine Optimization.",
+  },
+  {
+    title: "email & WhatsApp Marketing",
+    href: "/services/emailwhatsappmarketing",
+    description: "Engage Customers Through Targeted Email and WhatsApp Marketing.",
   },
   {
     title: "Social Media Marketing",
     href: "/services/smmarketing",
-    description: "Elevate Your Brand with Social Media Marketing Expert.",
+    description: "Elevate Your Brand with Strategic Social Media Marketing.",
   },
   {
     title: "Graphic Design",
     href: "/services/graphicdesign",
-    description: "Transform Your Brand with Stunning Graphic Design.",
+    description: "Transform Your Brand with Creative and Professional Graphic Design.",
   },
   {
-    title: "Lead Generation",
-    href: "/services/leadgen",
-    description: " Supercharge Your Sales with Expert Lead Generation.",
-  },
+  title: "Performance Marketing",
+  href: "/services/performancemarketing",
+  description: "Drive Measurable Growth with Performance Marketing.",
+},
   {
     title: "Marketing Automation",
     href: "/services/marketingautomation",
-    description:
-      "Streamline Your Marketing with Advanced Automation Solutions.",
+    description: "Streamline Your Marketing with Advanced Automation Solutions.",
   },
-  {
+ /* {
     title: "AI Enhanced Digital Optimization",
     href: "/services/aioptimization",
-    description:
-      "Unlock Superior Performance with AI-Enhanced Digital Optimization.",
-  },
+    description: "Unlock Better Digital Performance with AI-Enhanced Optimization.",
+  }, */
   {
-    title: "Content Writing",
-    href: "/services/contentwriting",
-    description: "Elevate Your Brand with Professional Content Writing.",
-  },
-  {
-    title: "Content Marketing ",
+    title: "Content Marketing",
     href: "/services/contentmarketing",
-    description: "Drive Engagement and Growth with Expert Content Marketing.",
+    description: "Build Your Brand with Strategic and Engaging Content Marketing.",
   },
+  
   {
-    title: "Collab Membership",
-    href: "/services/collab",
-    description: "Unlock Exclusive Benefits with Our Collab Membership",
+    title: "Video Editing",
+    href: "/services/videoediting",
+    description: "Create Engaging and Professional Videos for Your Brand.",
+  },
+
+  {
+    title: "Local SEO & Google Maps Optimization",
+    href: "/services/local-seo",
+    description: "Improve Local Visibility and Google Maps Presence.",
+  },
+
+  {
+    title: "E-commerce Services",
+    href: "/services/ecommerce",
+    description: "Grow and Optimize Your E-commerce Business.",
   },
   {
     title: "Salesforce CRM",
     href: "/services/salesforce",
-    description:
-      "We are dedicated to helping businesses like yours unlock the full potential of Salesforce.",
+    description: "Unlock the Full Potential of Salesforce for Your Business.",
+  },
+  
+   {
+    title: "Digital Marketing Consultation",
+    href: "/services/digital-marketing-consultation",
+    description: "Scale your business faster with data-driven digital marketing strategies tailored to optimize your ad spend, boost conversions, and dominate your niche.",
+  },
+  {
+    title: "Influencer Marketing",
+    href: "/services/influencer-marketing",
+    description: "Build trust, reach new audiences, and drive brand growth through strategic influencer partnerships.",
   },
 ];
 
@@ -154,7 +174,7 @@ export function Navbar() {
             </NavigationMenu>
           </div>
           <div className="">
-            <PortfolioBtn />
+             {/* <PortfolioBtn /> */}
           </div>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-4">

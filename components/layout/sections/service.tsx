@@ -28,7 +28,7 @@ export function ServiceSection() {
       link: "/services/webdev",
     },
     {
-      title: "SEO",
+      title: "SEOAEO",
       description:
         "Get the no.1 place among your competitors in the google search.",
       icon: <IconSeo />,
@@ -48,10 +48,10 @@ export function ServiceSection() {
       link: "/services/graphicdesign",
     },
     {
-      title: "Lead Generation",
-      description: "Boost sales effortlessly through an effective lead generation.",
+      title: "Performance Marketing",
+      description: "Drive Measurable Growth with Performance Marketing.",
       icon: <IconRouteAltLeft />,
-      link: "/services/leadgen",
+      link: "/services/performancemarketing",
     },
     {
       title: "Marketing Automation",
@@ -60,36 +60,72 @@ export function ServiceSection() {
       icon: <IconAutomation />,
       link: "/services/marketingautomation",
     },
-    {
+   /* {
       title: "AI Enhanced Digital Optimization",
       description:
         "Let’s join our AI-powered growth & optimization and Supercharge Your Digital Presence.",
       icon: <IconAdjustmentsBolt />,
       link: "/services/aioptimization",
-    },
-    {
+    },*/
+   /* {
       title: "Content Writing",
       description: "IEngaging & SEO-friendly content writing service is one tap away.",
       icon: <IconEdit />,
       link: "/services/contentwriting",
-    },
+    }, */
     {
       title: "Content Marketing",
       description: "Attract, inform, and inspire your customers to drive more sales.",
       icon: <IconActivity />,
       link: "/services/contentmarketing",
     },
-    {
+   /* {
       title: "Collab Membership",
       description: "Join Us and collaborate with Facebook groups and Influencers to elevate your branding journey.",
       icon: <IconHeartHandshake />,
       link: "/services/collab",
-    },
+    }, */
     {
       title: "Salesforce",
       description: "The ultimate CRM solution is here.",
       icon: <IconHeart />,
       link: "/services/salesforce",
+    },
+     {
+      title: "Email & WhatsApp Marketing",
+      description: "The email and WhatsApp marketing solution is here.",
+      icon: <IconHeart />,
+      link: "/services/emailwhatsappmarketing",
+    },
+     {
+      title: "Ecommerce Services",
+      description: "The ultimate ecommerce solution is here.",
+      icon: <IconHeart />,
+      link: "/services/ecommerce",
+    },
+    {
+      title: "Local SEO",
+      description: "Boost your local business visibility and attract more customers with our Local SEO services.",
+      icon: <IconHeart />,
+      link: "/services/local-seo",
+    },
+    {
+      title: "Digital Marketing Consultation",
+      description: "Get expert digital marketing consultation to audit your online presence, build custom growth strategies, and maximize your ROI across search, social, and paid ads.",
+      icon: <IconHeart />,
+      link: "/services/digital-marketing-consultation",
+    },
+    {
+      title: "Influencer Marketing",
+      description: "Build trust, reach new audiences, and drive brand growth through strategic influencer partnerships.",
+      icon: <IconHeart />,
+      link: "/services/influencer-marketing",
+    },
+    {
+      title: "Video Editing",
+      description: "Turn your ideas into engaging video content designed for today's digital platforms.",
+      icon: <IconHeart />,
+      link: "/services/videoediting",
     },
   ];
   return (
