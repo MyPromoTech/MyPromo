@@ -11,7 +11,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
-import ConsultationImage from "@app/assets/Digital-marketing-consultation.jpg";
+import ConsultationImage from "@/app/assets/Digital-marketing-consultation.jpg";
 
 export default function DigitalMarketingConsultation() {
   return (
